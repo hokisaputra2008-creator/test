@@ -1,0 +1,10 @@
+SET FOREIGN_KEY_CHECKS = 0;
+
+TRUNCATE TABLE `tb_log_aktivitas`;
+TRUNCATE TABLE `tb_transaksi`;
+TRUNCATE TABLE `tb_kendaraan`;
+TRUNCATE TABLE `tb_area_parkir`;
+TRUNCATE TABLE `tb_tarif`;
+TRUNCATE TABLE `tb_user`;
+
+SET FOREIGN_KEY_CHECKS = 1;
