@@ -1,4 +1,3 @@
-CREATE DATABASE `parkir` CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 USE `parkir`;
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -30,9 +29,9 @@ CREATE TABLE `tb_area_parkir` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `tb_area_parkir` (`id_area`, `nama_area`, `kapasitas`, `terisi`) VALUES
-(2, 'Area A1', 10, 0),
-(3, 'Area A2', 20, 0),
-(4, 'Area A3', 30, 0);
+(1, 'Area A1', 10, 0),
+(2, 'Area A2', 20, 0),
+(3, 'Area A3', 30, 0);
 
 ALTER TABLE `tb_area_parkir` MODIFY `id_area` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
@@ -44,8 +43,8 @@ CREATE TABLE `tb_tarif` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `tb_tarif` (`id_tarif`, `jenis_kendaraan`, `tarif_per_jam`) VALUES
-(13, 'mobil', 5000),
-(14, 'motor', 3000);
+(1, 'mobil', 5000),
+(2, 'motor', 3000);
 
 ALTER TABLE `tb_tarif` MODIFY `id_tarif` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
