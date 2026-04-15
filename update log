@@ -1,0 +1,4 @@
+UPDATE tb_log_aktivitas l
+JOIN tb_transaksi t ON l.aktivitas = CONCAT('Kendaraan Keluar ID: ', t.id_parkir)
+JOIN tb_kendaraan k ON t.id_kendaraan = k.id_kendaraan
+SET l.aktivitas = CONCAT('Kendaraan Keluar: ', k.plat_nomor);
